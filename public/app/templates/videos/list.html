@@ -1,0 +1,7 @@
+<h1>Listing of Videos</h1>
+
+<ul>
+  <% _.each(videos, function(video){ %>
+    <li><a href="video/<%= video._id %>"><%= video.headline %></a></li>
+  <% }); %>
+</ul>
